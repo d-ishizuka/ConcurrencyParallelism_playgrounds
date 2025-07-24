@@ -4,7 +4,7 @@ import threading
 from threading import Thread
 
 def cpu_waster(i: int) -> None:
-    name = threading.current_thread().getName()
+    name = threading.current_thread().name
     print(f"{name} doing {i} work")
     time.sleep(3)
 
